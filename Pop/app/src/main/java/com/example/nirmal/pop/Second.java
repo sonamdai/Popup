@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by nirmal on 6/16/2016.
@@ -20,6 +21,8 @@ public class Second extends MainActivity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
         getWindow().setLayout((int)(width*.8),(int)(height*.6));
+
+        Toast.makeText(getBaseContext(),"Popup Created",Toast.LENGTH_SHORT).show();
 
 
 
